@@ -95,15 +95,15 @@ body {
     background-color: #5c6bc0;
     text-align: center;
     vertical-align:bottom;
-    color: #4f5ca6;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 155px;
 }
 
 .footer__text {
     display: inline-block;
     vertical-align: middle;
+    color: #4f5ca6;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 155px;
 }
 
