@@ -1,0 +1,19 @@
+@import 'variables';
+
+.footer {
+    height: 160px;
+    background-color: #5c6bc0;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.footer__text {
+    display: inline-block;
+    vertical-align: middle;
+    color: #4f5ca6;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: $weight-font;
+    line-height: 155px;
+}
+
