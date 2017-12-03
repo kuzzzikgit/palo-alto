@@ -1,0 +1,138 @@
+@import 'variables';
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #333;
+  background-color: #f7f9fc; 
+}
+
+.pa {
+    width: $width-content;
+    margin: $margin-center;
+}
+
+.pa-section__header_index {
+    width: 758px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    box-sizing: $box-block;
+    margin: $margin-center;
+    border-bottom: 2px solid #eee;
+}
+
+.pa-section__header_date {
+    font-weight: $weight-font;
+    font-size: 14px;
+    color: #bdbdbd;
+    padding: 40px 0 18px 0;
+}
+
+.pa-section__header_label {
+    background-color: #5c6bc0;
+    color: $primary-color;
+    padding: 10px 12px;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    position: relative;
+    right: -108px;
+    top: 10px;
+    font-weight: $weight-font;
+}
+
+.pa-section__header_title {
+    line-height: 39pt;
+    font-size: 40px;
+    font-weight: $weight-font; 
+}
+
+.pa-section__content {
+    width: 758px;
+    margin: $margin-center;
+    padding-bottom: 58px;
+    margin-bottom: 52px;
+}
+
+.pa-section__content_text {
+    padding-top: 35px;
+    font-size: 17px;
+    color: #585858;
+    line-height: 24pt;
+}
+
+.pa-section__content_more {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.section-button {
+    padding: 20px 35px;
+    background-color: $primary-color;
+    color: #5c6bc0;
+    font-size: 24px;
+    font-weight: $weight-font;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.pa-section__content_more:hover {
+    border: 2px solid #f1f1f1;
+}
+
+.pa-section__content_more:active {
+    border: 2px solid #7d89cd;
+}
+
+    
+.pa-section__content_hash {
+    display: inline-block;
+    float: right;
+    margin-top: 40px;
+}   
+    
+.tag {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.tag:first-child {
+    padding-left: 0;
+}
+
+.tag__hash {
+    color: #d2d2d2;
+}
+
+.tag__hash:hover {
+    color: #5c6bc0;
+    text-decoration: underline;
+}
+
+.tag__hash:active {
+    color: #5c6bc0;
+    text-decoration: none;
+}
+
+.pa-section__header_photo {
+    background: url(./images/image.jpg) left center no-repeat;
+    width: 950px;
+    height: 636px;
+}
+
+@media only screen and (min-device-pixel-ratio: 1.5) {
+  .pa-section__header_photo {
+    background-image: url(./images/image@2x.jpg);
+    width: 950px;
+    height: 636px;
+    }
+}
+
+.pa-section__header_preamble {
+    font-size: 25px;
+    font-style: italic;
+    color: #b8b8b8;
+    font-weight: 500;
+    line-height: 1.6;
+    padding-top: 35px;
+}

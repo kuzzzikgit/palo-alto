@@ -1,0 +1,31 @@
+{{#> layout/base }}
+
+{{#*inline "main-block"}}
+    <section class="pa-section">
+            <div class="pa-section__header">
+                Profile
+            </div>
+            <div class="pa-profile-autorization">
+                    <label for="firstname">First Name</label><br>
+                    <input class="pa-profile-autorization__text" type="text" id="firstname" name="fname" placeholder="John" tab-index="1" autofocus>
+                    <label for="lasttname">Last Name</label><br>
+                    <input class="pa-profile-autorization__text" type="text" id="lasttname" name="lname" placeholder="Doe" tab-index="2">
+                    <label for="mail">E-mail</label><br>
+                    <input class="pa-profile-autorization__text" type="email" id="mail" name="e-mail" placeholder="johnd@gmail.com" tab-index="3" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+                    <label for="phone">Phone</label><br>
+                    <input class="pa-profile-autorization__text" type="tel" id="phone" name="telephone" placeholder="+_(___)___-__-__" tab-index="4" pattern="\+\d{1}[\(]{0,1}\d{3}\){0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                    <label for="datebirth">Date of Birth</label><br>
+                    <input class="pa-profile-autorization__text pa-profile-autorization__text_calendar" type="text" id="datebirth" name="b-date" placeholder="DD/MM/YYYY" tab-index="5" pattern="\d{2}\/\d{2}\/\d{4}">
+                    Sex<br>
+                    <input class="pa-profile-autorization__radio" type="radio" id="sexMale" name="sex" value="male" checked>
+                    <label class="pa-profile-autorization__radio-title" for="sexMale">Male</label><br>
+                    <input class="pa-profile-autorization__radio" type="radio" id="sexFemale" name="sex" value="femail">
+                    <label class="pa-profile-autorization__radio-title" for="sexFemale">Female</label>
+                <div action="mailto:kuzzzikgoo@gmail.com" enctype="text/plain">
+                    <input  class="pa-profile-autorization__submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </section>
+{{/inline}}
+
+{{/layout/base }}

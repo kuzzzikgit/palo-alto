@@ -1,0 +1,75 @@
+@import 'variables';
+
+.footer {
+    height: 385px;
+    background-color: #5c6bc0;
+    text-align: center;
+    vertical-align: bottom;
+    box-sizing: $box-block;
+}
+
+.footer__text {
+    color: #4f5ca6;
+    font-size: 36px;
+    font-style: italic;
+    padding-top: 57px;
+    
+}
+
+.footer__nav-inner {
+    color: $primary-color;
+}
+.footer__copiright_info {
+    font-size: 14px;
+    color: #a9afdb;
+}
+
+.footer__copiright_name {
+    font-size: 16px;
+    color: $primary-color;
+    font-weight: $weight-font;
+}
+
+.footer__social {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.social-button {
+    width: 22px;
+    height: 22px;
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.social-button:first-child {
+    margin-left: 0;
+}
+
+.footer__social_facebook {
+    background-image: $image-social;
+    background-position: 0 0;
+}
+
+.footer__social_twitter {
+    background-image: $image-social;
+    background-position: -22px 0;
+}
+
+.footer__social_instagramm {
+    background-image: $image-social;
+    background-position: -44px 0;
+}
+
+.footer__social_pin {
+    background-image: $image-social;
+    background-position: -66px 0;
+}
+
+.footer__nav {
+    padding-top: 50px;
+}
+
+.footer__copiright {
+    padding-top: 56px;
+}

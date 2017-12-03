@@ -1,21 +1,5 @@
 @import 'variables';
 
-.pa-profile {
-    background-color: $primary-color;
-    box-shadow: 0 0 20px #e1e1e1;
-}
-
-.pa-profile__header {
-    width: 758px;
-    height: 155px;
-    padding-top: 67px;
-    box-sizing: $box-block;
-    margin: $margin-center;
-    font-size: 40px;
-    font-weight: $weight-font;
-    border-bottom: 2px solid #eee;
-}
-
 .pa-profile-autorization {
     width: 365px;
     margin: 40px auto 115px auto;
@@ -48,18 +32,14 @@
 .pa-profile-autorization__text::placeholder {
     color: #cacbcd;
 }
-
-.pa-profile-autorization__radio {
-    
-}
-
+/*
 .pa-profile-autorization__radio-title {
     margin-top: 20px;
     padding-left: 25px;
     background-image: url(../images/radio0.png);
     background-repeat: no-repeat;
 }
-
+*/
 .pa-profile-autorization__radio-title:checked {
     background-image: url(../images/radio1.png);
     background-repeat: no-repeat;
@@ -85,4 +65,3 @@
 .pa-profile-autorization__submit:active {
     border: 2px solid #7d89cd;
 }
-
