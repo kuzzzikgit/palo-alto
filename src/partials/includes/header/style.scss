@@ -3,7 +3,8 @@
 .pa-header {
     height: 190px;
     padding-top: 67px;
-    box-sizing: $box-block;    
+    box-sizing: $box-block;
+    position: relative;
 }
 
 .pa-header__title {
@@ -16,6 +17,12 @@
 
 .pa-header__nav {
     float: right;
+}
+
+.set {
+   position: absolute;
+    top: 65px;
+    right: 0px;
 }
 
 .navigation{
@@ -32,6 +39,12 @@
 .pa-section {
     background-color: $primary-color;
     box-shadow: 0 0 20px #e1e1e1;
+    padding-bottom: 58px;
+    margin-bottom: 52px;
+}
+
+.pa-section:last-child {
+    margin-bottom: 110px;
 }
 
 .pa-section__header {
@@ -47,4 +60,26 @@
 
 .pa-header__nav-inner {
     color: #333;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .set {
+        display: none;
+    }
+}
+
+//@media screen and (max-width: 768px) {
+//    
+//}
+
+@media screen and (max-width: 320px) {
+    .pa-header__nav {
+        display: none;
+    }
+    
+    .pa-header {
+        height: 160px;
+        padding-top: 50px;
+    }
 }

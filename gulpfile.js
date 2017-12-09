@@ -29,11 +29,11 @@ gulp.task('default', ['build', 'serve', 'watch']);
 
 gulp.task('css', function () {
   return gulp.src(path.css)
-    .pipe(cssmin())
     .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(sass().on('error', sass.logError))
+    .pipe(cssmin())
     .pipe(gulp.dest(path.dist.css));
 });
 

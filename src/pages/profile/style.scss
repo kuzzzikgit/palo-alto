@@ -65,3 +65,26 @@
 .pa-profile-autorization__submit:active {
     border: 2px solid #7d89cd;
 }
+
+//@media screen and (max-width: 1024px) {
+
+//}
+
+//@media screen and (max-width: 768px) {
+//    
+//}
+
+@media screen and (max-width: 320px) {
+    .pa-section__header {
+        width: 230px !important;
+        height: 155px;
+     }
+    
+     .pa-profile-autorization {
+        width: 280px;
+        margin: 35px auto 55px auto;
+        padding-bottom: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+}
+}

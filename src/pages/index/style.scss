@@ -12,83 +12,90 @@ body {
     margin: $margin-center;
 }
 
-.pa-section__header_index {
+.pa-article {
     width: 758px;
-    padding-top: 10px;
+    margin: $margin-center;
+    position: relative;
+}
+
+.pa-article__header_index {
     padding-bottom: 40px;
     box-sizing: $box-block;
     margin: $margin-center;
     border-bottom: 2px solid #eee;
+    position: relative;
 }
 
-.pa-section__header_date {
+.pa-article__header_date {
     font-weight: $weight-font;
     font-size: 14px;
     color: #bdbdbd;
-    padding: 40px 0 18px 0;
+    padding: 60px 0 18px 0;
 }
 
-.pa-section__header_label {
+.pa-article__header_label {
     background-color: #5c6bc0;
     color: $primary-color;
     padding: 10px 12px;
     display: inline-block;
-    float: right;
     font-size: 14px;
-    position: relative;
     right: -108px;
-    top: 10px;
+    top: 20px;
     font-weight: $weight-font;
+    position: absolute;
 }
 
-.pa-section__header_title {
+.pa-article__header_title {
     line-height: 39pt;
     font-size: 40px;
     font-weight: $weight-font; 
 }
 
-.pa-section__content {
-    width: 758px;
+.pa-article__content {
     margin: $margin-center;
-    padding-bottom: 58px;
-    margin-bottom: 52px;
 }
 
-.pa-section__content_text {
+.pa-article__content_text {
     padding-top: 35px;
     font-size: 17px;
     color: #585858;
     line-height: 24pt;
 }
 
-.pa-section__content_more {
-    display: inline-block;
-    margin-top: 25px;
+.pa-article__foo {
+    position: relative;
 }
 
-.section-button {
+.pa-article__foo_more {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.article-button {
     padding: 20px 35px;
     background-color: $primary-color;
     color: #5c6bc0;
-    font-size: 24px;
+    font-size: 21px;
+    box-sizing: $box-block;
     font-weight: $weight-font;
     text-transform: uppercase;
-    border: 0;
+    border: 2px solid #fff;
 }
 
-.pa-section__content_more:hover {
+.article-button:hover {
     border: 2px solid #f1f1f1;
 }
 
-.pa-section__content_more:active {
+.article-button:active {
     border: 2px solid #7d89cd;
 }
 
     
-.pa-section__content_hash {
+.pa-article__foo_hash {
     display: inline-block;
-    float: right;
-    margin-top: 40px;
+    position: absolute;
+    top: 60px;
+    right: -10px;
 }   
     
 .tag {
@@ -114,25 +121,111 @@ body {
     text-decoration: none;
 }
 
-.pa-section__header_photo {
+.pa-article__photo {
     background: url(./images/image.jpg) left center no-repeat;
     width: 950px;
     height: 636px;
+    position: relative;
+    right: 95px;
 }
 
-@media only screen and (min-device-pixel-ratio: 1.5) {
-  .pa-section__header_photo {
-    background-image: url(./images/image@2x.jpg);
-    width: 950px;
-    height: 636px;
-    }
-}
-
-.pa-section__header_preamble {
+.pa-article__header_preamble {
     font-size: 25px;
     font-style: italic;
     color: #b8b8b8;
     font-weight: 500;
     line-height: 1.6;
     padding-top: 35px;
+}
+
+
+@media only screen and (min-device-pixel-ratio: 1.5) {
+  .pa-article__photo {
+    background-image: url(./images/image@2x.jpg);
+    width: 950px;
+    height: 636px;
+    }
+}
+
+//@media screen and (max-width: 1024px) {
+
+//}
+
+//@media screen and (max-width: 768px) {
+//    
+//}
+
+@media screen and (max-width: 320px) {
+    .pa-article {
+        width: 230px;
+    }
+    
+    .pa-article__header_date {
+        padding: 40px 0 18px 0;
+    }
+    
+    .pa-article__header_title {
+        line-height: 25pt;
+        font-size: 24px;
+    }
+    
+    .pa-article__header_index {
+        padding-bottom: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .pa-article__content_text {
+        padding-top: 10px;
+        font-size: 16px;
+    }
+    
+    .pa-article__foo_more {
+        margin-top: 0;
+    }
+    
+    .pa-article__foo_hash {
+        top: 80px;
+        right: 20px;
+    }
+    
+    .pa-section {
+        margin-bottom: 20px !important;
+    }
+    
+        
+    .pa-section:last-child {
+        margin-bottom: 55px !important ;
+    }
+    
+    .pa-article__photo {
+        background: url(./images/image-320.jpg) left center no-repeat;
+        width: 280px;
+        height: $height-image-320;
+        left: -25px;
+    }
+        
+    .pa-article__header_label {
+        right: -25px;
+        top: 0px;
+    }
+      
+    .header-image {
+        right: -25px;
+        top: -198px;
+    }
+    
+    @media only screen and (min-device-pixel-ratio: 1.5) {
+        .pa-article__photo {
+            background-image: url(./images/image-320@2x.jpg);
+            width: 280px;
+            height: $height-image-320;
+            position: relative;
+            right: 25px;
+        }
+    }
+        .pa-article__header_preamble {
+            font-size: 18px;
+            padding-top: 15px;
+        }
+
 }
