@@ -1,5 +1,22 @@
 @import 'variables';
 
+.pa-section_profile {
+    background-color: $primary-color;
+    box-shadow: 0 0 20px #e1e1e1;
+    margin-bottom: 100px;
+}
+
+.pa-section__header {
+    width: 758px;
+    height: 155px;
+    padding-top: 67px;
+    box-sizing: $box-block;
+    margin: $margin-center;
+    font-size: 40px;
+    font-weight: $weight-font;
+    border-bottom: 2px solid #eee;
+}
+
 .pa-profile-autorization {
     width: 365px;
     margin: 40px auto 115px auto;
@@ -23,7 +40,7 @@
 }
 
 .pa-profile-autorization__text_calendar {
-    background-image: url(../images/calend.png);
+    background-image: url(./images/calend.png);
     background-repeat: no-repeat;
     background-position: 95% 50%; 
 }
@@ -32,14 +49,7 @@
 .pa-profile-autorization__text::placeholder {
     color: #cacbcd;
 }
-/*
-.pa-profile-autorization__radio-title {
-    margin-top: 20px;
-    padding-left: 25px;
-    background-image: url(../images/radio0.png);
-    background-repeat: no-repeat;
-}
-*/
+
 .pa-profile-autorization__radio-title:checked {
     background-image: url(../images/radio1.png);
     background-repeat: no-repeat;
@@ -66,25 +76,37 @@
     border: 2px solid #7d89cd;
 }
 
-//@media screen and (max-width: 1024px) {
+@media only screen and (min-device-pixel-ratio: 1.5) {
+    .pa-profile-autorization__text_calendar {
+        background-image: url(./images/calend@2x.png);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+}
 
-//}
-
-//@media screen and (max-width: 768px) {
-//    
-//}
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
+    .pa-section_profile {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     .pa-section__header {
-        width: 230px !important;
-        height: 155px;
+        width: 718px;
+     }
+}
+
+@media screen and (max-width: 768px) {
+    
+     .pa-section_profile {
+        padding-bottom: 0;
+     }
+
+     .pa-section__header {
+        width: 230px;
      }
     
      .pa-profile-autorization {
-        width: 280px;
+        width: 230px;
         margin: 35px auto 55px auto;
         padding-bottom: 30px;
-        padding-left: 25px;
-        padding-right: 25px;
-}
+     }
 }

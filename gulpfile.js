@@ -13,7 +13,7 @@ var path = {
         pages: './src/pages/**/*.hbs',
         partials: './src/partials/'
     },
-    images: './src/images/*.*',
+    images: './src/**/images/*.*',
     dist: {
       css:  './dist/',
       html: './dist/',
@@ -32,8 +32,8 @@ gulp.task('css', function () {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(sourcemaps.write('.'))
     .pipe(cssmin())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(path.dist.css));
 });
 
@@ -52,6 +52,9 @@ gulp.task('html', function () {
 
 gulp.task('images', function() {
   gulp.src(path.images)
+  .pipe(rename({
+        dirname: '.',
+  }))
   .pipe(gulp.dest(path.dist.images));
 });
 

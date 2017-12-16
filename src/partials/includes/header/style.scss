@@ -7,79 +7,89 @@
     position: relative;
 }
 
+.set {
+    display: none;
+}
+
 .pa-header__title {
-    font-size: 42px;
-    font-style: italic;
-    font-weight: $weight-font;
-    float: left;
-    clear: right;
+    background: url(./images/title_header.png) left center no-repeat;
+    display: inline-block;
+    width: 157px;
+    height: 33px;
 }
 
 .pa-header__nav {
-    float: right;
+    position: absolute;
+    top: 70px;
+    right: 0;
 }
 
-.set {
-   position: absolute;
-    top: 65px;
-    right: 0px;
+.nav-search {
+    background: url(./images/search.png) left center no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 35px;
 }
 
-.navigation{
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: $weight-font;
-    padding-left: 30px;
+.nav-link{
+    display: inline-block;
 }
 
-.navigation:first-child {
-    padding-left: 0;
-}
-
-.pa-section {
-    background-color: $primary-color;
-    box-shadow: 0 0 20px #e1e1e1;
-    padding-bottom: 58px;
-    margin-bottom: 52px;
-}
-
-.pa-section:last-child {
-    margin-bottom: 110px;
-}
-
-.pa-section__header {
-    width: 758px;
-    height: 155px;
-    padding-top: 67px;
-    box-sizing: $box-block;
-    margin: $margin-center;
-    font-size: 40px;
-    font-weight: $weight-font;
-    border-bottom: 2px solid #eee;
+.nav-link:first-child {
+    margin-left: 0;
 }
 
 .pa-header__nav-inner {
     color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 35px;
 }
 
-
-@media screen and (max-width: 1024px) {
-    .set {
-        display: none;
-    }
-}
-
-//@media screen and (max-width: 768px) {
-//    
-//}
-
-@media screen and (max-width: 320px) {
-    .pa-header__nav {
-        display: none;
+@media only screen and (min-device-pixel-ratio: 1.5) {
+    .nav-search {
+        background: url(./images/search@2x.png) left center no-repeat;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 35px;
     }
     
+    .pa-header__title {
+        background: url(./images/title_header@2x.png) left center no-repeat;
+        display: inline-block;
+        width: 157px;
+        height: 33px;
+    }
+    
+    .set {
+        background: url(./images/burger@2x.png) left center no-repeat;
+        height: 26px;
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+        
     .pa-header {
         height: 160px;
         padding-top: 50px;
     }
+    
+    .nav-link {
+        display: none;
+    }
+    
+    .set {
+        display: inline-block;
+        background: url(./images/burger.png) left center no-repeat;
+        height: 26px;
+        width: 32px;
+    }
+    
+    .pa-header__nav {
+        top: 55px;
+    }
+    
 }

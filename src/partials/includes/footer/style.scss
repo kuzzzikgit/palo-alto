@@ -9,16 +9,37 @@
     padding: 0 38px;
 }
 
-.footer__text {
-    color: #4f5ca6;
-    font-size: 36px;
-    font-style: italic;
-    padding-top: 57px; 
+.pa-header__title_footer {
+    background: url(./images/title_footer.png) left center no-repeat;
+    display: inline-block;
+    width: 135px;
+    height: 28px;
+    margin-top: 57px;
 }
 
-.footer__nav-inner {
-    color: $primary-color;
+.nav-link_footer {
+    padding-top: 56px;
 }
+
+.nav-link__nav-inner_footer {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 35px;
+}
+
+.nav-link__nav-inner_footer:first-child {
+    margin-left: 0;
+}
+
+.nav-search_footer {
+    background: url(./images/searchfooter.png) left center no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 35px;
+}
+
 .footer__copiright_info {
     font-size: 14px;
     color: #a9afdb;
@@ -36,8 +57,8 @@
 }
 
 .social-button {
-    width: 22px;
-    height: 22px;
+    width: 21px;
+    height: 21px;
     margin-left: 25px;
     display: inline-block;
 }
@@ -66,46 +87,41 @@
     background-position: -66px 0;
 }
 
-.footer__nav {
-    padding-top: 50px;
-}
-
-.navigation__foot {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: $weight-font;
-    padding-left: 30px;
-}
-
-.navigation__foot:first-child {
-    padding-left: 0;
-}
-
 .footer__copiright {
     padding-top: 56px;
 }
 
-//@media screen and (max-width: 1024px) {
-//    .set {
-//        display: none;
-//    }
-//}
+@media only screen and (min-device-pixel-ratio: 1.5) {
+    .footer__title {
+        background: url(./images/title_footer@2x.png) left center no-repeat;
+        display: inline-block;
+        width: 135px;
+        height: 28px;
+        margin-top: 57px;
+    }
+    
+    .nav-search_footer {
+        background: url(./images/searchfooter@2x.png) left center no-repeat;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 35px;
+    }
+}
 
-//@media screen and (max-width: 768px) {
-//    
-//}
-
-@media screen and (max-width: 320px) {
-    .navigation__foot {
-        padding: 15px 0 0 0;
+@media screen and (max-width: 768px) {
+    
+    .nav-link__nav-inner_footer {
         display: block;
+        margin-left: 0;
+        margin-top: 20px;
     }
     
-    .navigation__foot:first-child {
-        padding-top: 0;
+    .nav-link__nav-inner_footer:first-child {
+        margin-top: 0;
     }
     
-    .foot-320 {
+    .nav-search_footer {
         display: none;
     }
     

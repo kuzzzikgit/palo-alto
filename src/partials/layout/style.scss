@@ -16,9 +16,13 @@ a {
     margin: $margin-center;
 }
 
-//@media screen and (max-width: 768px) {...}
+@media screen and (max-width: 1024px) {
+    .pa {
+        width: $width-content-768 !important;
+    }
+}
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
     .pa {
         width: $width-content-320 !important;
     }
