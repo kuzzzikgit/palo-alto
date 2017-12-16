@@ -7,11 +7,6 @@ body {
   background-color: #f7f9fc; 
 }
 
-.pa {
-    width: $width-content;
-    margin: $margin-center;
-}
-
 .pa-section {
     background-color: $primary-color;
     box-shadow: 0 0 20px #e1e1e1;
@@ -162,25 +157,23 @@ body {
 
 @media only screen and (min-device-pixel-ratio: 1.5) {
   .pa-article__photo {
-    background-image: url(./images/image@2x.jpg);
+    background-image: url(./images/image@2x.jpg) left center no-repeat;
     width: 950px;
     height: 636px;
     }
-}
-    
-@media only screen and (min-device-pixel-ratio: 1.5) {
-    .pa-article__header_photo {
-        background-image: url(./images/image-320@2x.jpg);
-        width: 280px;
-        height: $height-image-320;
-        position: relative;
-        right: 25px;
+
+.pa-article__header_photo {
+    background-image: url(./images/image-320@2x.jpg) left center no-repeat;
+    width: 280px;
+    height: $height-image-320;
+    position: relative;
+    right: 25px;
     }
             
-    .pa-article__header_photo {
-        background: url(./images/image-768@2x.jpg) left center no-repeat;
-        width: 768px;
-        left: -25px;
+.pa-article__header_photo {
+    background: url(./images/image-768@2x.jpg) left center no-repeat;
+    width: 768px;
+    left: -25px;
     }
 }
 

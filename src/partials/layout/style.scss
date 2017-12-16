@@ -18,12 +18,12 @@ a {
 
 @media screen and (max-width: 1024px) {
     .pa {
-        width: $width-content-768 !important;
+        width: $width-content-768;
     }
 }
 
 @media screen and (max-width: 768px) {
     .pa {
-        width: $width-content-320 !important;
+        width: $width-content-320;
     }
 }
