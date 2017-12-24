@@ -1,0 +1,31 @@
+{{#> layout/base }}
+
+{{#*inline "main-block"}}
+    <section class="pa-section">
+        <article class="pa-article">
+            <div class="pa-article__header_photo">{{photo}}</div>
+            <div class="pa-article__header_index">
+                <div class="pa-article__header_label">{{label}}</div>
+                <div class="pa-article__header_date">{{date}}</div>
+                <span class="pa-article__header_title">{{title}}</span>
+            </div>
+            <div class="pa-article__content">
+                <div class="pa-article__header_preamble">{{preamble}}</div>
+                <div class="pa-article__content_text">{{text}}</div>
+                <div class="pa-article__content_epilogue">{{epilogue}}</div>
+            </div>
+            <div class="pa-article__foo">
+                <div class="pa-article__foo_more" action="mailto:kuzzzikgoo@gmail.com" enctype="text/plain">
+                    <input  class="article-button" type="submit" value="Read More">
+                </div>
+                <div class="pa-article__foo_hash">
+                    <span class="tag"><a class="tag__hash" href="#">{{tags}} </a></span>
+                    <span class="tag"><a class="tag__hash" href="#">{{tags}}</a></span>
+                    <span class="tag"><a class="tag__hash" href="#">{{tags}}</a></span>
+                </div>
+            </div>
+        </article>
+    </section>
+{{/inline}}
+
+{{/layout/base }}

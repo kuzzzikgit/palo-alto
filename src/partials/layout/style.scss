@@ -16,6 +16,10 @@ a {
     margin: $margin-center;
 }
 
+.slide-nav {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .pa {
         width: $width-content-768;
@@ -25,5 +29,17 @@ a {
 @media screen and (max-width: 768px) {
     .pa {
         width: $width-content-320;
+    }
+    .slide-nav {
+    display: block;
+    width: $width-content-320;
+    height: 100%;
+    position: fixed;
+    background-color: #252b4d;
+    }
+    
+    .slide-nav__search{
+        padding: auto, 55px;
+        
     }
 }
