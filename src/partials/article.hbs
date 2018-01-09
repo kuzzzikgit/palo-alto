@@ -1,31 +1,34 @@
-{{#> layout/base }}
-
-{{#*inline "main-block"}}
-    <section class="pa-section">
+ {{#article}}
         <article class="pa-article">
-            <div class="pa-article__header_photo">{{photo}}</div>
+            {{#if photo}}
+            <div class="pa-article__header_photo"></div>
+            {{/if}}
             <div class="pa-article__header_index">
                 <div class="pa-article__header_label">{{label}}</div>
                 <div class="pa-article__header_date">{{date}}</div>
                 <span class="pa-article__header_title">{{title}}</span>
             </div>
+            {{#each default}}
             <div class="pa-article__content">
+                {{#if preamble}}
                 <div class="pa-article__header_preamble">{{preamble}}</div>
-                <div class="pa-article__content_text">{{text}}</div>
+                {{/if}}
+                {{#if text}}
+                <div class="pa-article__content_text">{{text}}</div>{{/if}}
+                {{#if epilogue}}
                 <div class="pa-article__content_epilogue">{{epilogue}}</div>
+                {{/if}}
+            {{/each}}
             </div>
             <div class="pa-article__foo">
                 <div class="pa-article__foo_more" action="mailto:kuzzzikgoo@gmail.com" enctype="text/plain">
                     <input  class="article-button" type="submit" value="Read More">
                 </div>
                 <div class="pa-article__foo_hash">
-                    <span class="tag"><a class="tag__hash" href="#">{{tags}} </a></span>
-                    <span class="tag"><a class="tag__hash" href="#">{{tags}}</a></span>
-                    <span class="tag"><a class="tag__hash" href="#">{{tags}}</a></span>
+                    {{#each tags}}
+                    <span class="tag"><a class="tag__hash" href="#">{{this}}</a></span>
+                    {{/each}}
                 </div>
             </div>
         </article>
-    </section>
-{{/inline}}
-
-{{/layout/base }}
+{{/article}}

@@ -6,24 +6,17 @@
     <meta name="description" content="7bits courses" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palo Alto</title>
-    <link href="./styles/normalize.css" rel="stylesheet">
+<!--    <link href="./styles/normalize.css" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="./main.css"/>
     <link rel="shortcut icon" href="/favicon.ico" sizes="32x32"/>
     <link rel="shortcut icon" type="image/png" href="../../images/favicon.png" sizes="32x32"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
   </head>
   <body>
-<!--
-    <div class="slide-nav">
-        <div class="slide-nav__search">
-            <label for="slide-search"></label><br>
-            <input class="slide-search__text" type="text" id="slide-search" name="search" placeholder="search" autofocus>
-            <div class="nav-search_footer"></div>
-        </div>
-        <div class="slide-nav__body">
-        </div>
-    </div>
--->
+
       <div class="pa">
     {{> includes/header/header}}
 
@@ -31,8 +24,5 @@
     {{/main-block}}
       </div>
     {{> includes/footer/footer}}
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-    <script src="./scripts/scripts.js"></script>
   </body>
 </html>

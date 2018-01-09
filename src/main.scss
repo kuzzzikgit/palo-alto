@@ -1,10 +1,16 @@
+/* Variables */
+@import "variables";
+
+/* Normalize */
+@import "./styles/normalize";
+
 /* Layout */
-@import './partials/layout/style';
+@import './partials/layout/stylelayout';
 
 /* Pages */
-@import './pages/index/style';
-@import './pages/profile/style';
+@import './pages/index/styleindex';
+@import './pages/profile/styleprofile';
 
 /* Partials */
-@import './partials/includes/header/style';
-@import './partials/includes/footer/style';
+@import './partials/includes/header/styleheader';
+@import './partials/includes/footer/stylefooter';

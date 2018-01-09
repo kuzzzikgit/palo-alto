@@ -32,10 +32,11 @@ a {
     }
     .slide-nav {
     display: block;
-    width: $width-content-320;
+    width: 380px;
     height: 100%;
     position: fixed;
     background-color: #252b4d;
+    z-index: 2;
     }
     
     .slide-nav__search{
