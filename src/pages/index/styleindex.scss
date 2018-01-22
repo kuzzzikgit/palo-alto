@@ -7,13 +7,6 @@ body {
   background-color: #f7f9fc; 
 }
 
-.pa-section {
-    background-color: $primary-color;
-    box-shadow: 0 0 20px #e1e1e1;
-    padding-bottom: 58px;
-    margin-bottom: 52px;
-}
-
 .pa-section:last-child {
     margin-bottom: 110px;
 }
@@ -33,6 +26,10 @@ body {
     width: 758px;
     margin: $margin-center;
     position: relative;
+    padding-bottom: 60px;
+    background-color: $primary-color;
+    box-shadow: 0 0 20px #e1e1e1;
+    margin-bottom: 52px;
 }
 
 .pa-article__header_index {
@@ -180,12 +177,12 @@ body {
 @media screen and (max-width: 1024px) {
     
     .pa-section {
-        padding-left: 25px;
-        padding-right: 25px;
     }
     
     .pa-article {
         width: 718px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     
     .pa-article__header_label {
@@ -211,6 +208,7 @@ body {
 @media screen and (max-width: 768px) {
     .pa-article {
         width: 230px;
+        margin-bottom: 20px;
     }
     
     .pa-article__header_date {

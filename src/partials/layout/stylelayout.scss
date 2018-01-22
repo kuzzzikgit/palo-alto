@@ -27,9 +27,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+       position: absolute;
+       right: 0;
+    }
+    
     .pa {
         width: $width-content-320;
     }
+    
     .slide-nav {
     display: block;
     width: 380px;
